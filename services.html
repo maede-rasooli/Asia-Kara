@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en" class="dark" class="font-sans">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Asia Kara</title>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="" crossorigin="anonymous" />
+  <style>
+    :root{
+      --brand-light: #04c9cf;
+      --brand-dark:  #05e3e8;
+      --brand: var(--brand-light);
+    }
+    .dark { --brand: var(--brand-dark); }
+    /* fade in on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s ease;
+}
+
+/* When visible */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+  </style>
+  <link rel="icon" type="image/png" href="Asia_Kara_Industrial_Tools_Logo_Final_1-removebg-preview.png"/>
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="overflow-x-hidden bg-neutral-100 dark:bg-neutral-900 text-neutral-900 dark:text-gray-200 antialiased selection:bg-[#05e3e8]/30">
+<div id="navbar-container"></div>
+
+<!-- SERVICES HERO SECTION -->
+<section id="services-hero"
+  class="relative w-full h-full min-h-[calc(113vh-84px)] flex items-center justify-center overflow-hidden bg-neutral-950">
+
+  <!-- Background Image -->
+  <img src="service.jpg"
+       alt="Industrial Services"
+       class="absolute inset-0 w-full h-full object-cover opacity-50">
+
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black/70"></div>
+
+  <!-- 🔵 Mouse Glow Effect -->
+  <div id="mouse-glow"
+       class="pointer-events-none absolute w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] rounded-full opacity-0 transition-opacity duration-300"
+       style="background: radial-gradient(circle, rgba(5,227,232,0.45) 0%, rgba(5,227,232,0.2) 40%, transparent 70%);
+              filter: blur(60px);">
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-5xl mx-auto text-center px-4 sm:px-6 text-white reveal">
+
+    <p class="uppercase tracking-widest text-[#05e3e8] mb-4 text-xs sm:text-sm font-semibold"
+       data-i18n="services_tag">
+      Industrial Excellence & Engineering Innovation
+    </p>
+
+    <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight mb-6"
+        data-i18n="services_hero_title">
+      Advanced Industrial Solutions Engineered for the Future
+    </h1>
+
+    <p class="text-base sm:text-lg md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
+       data-i18n="services_hero_subtitle">
+      From high-precision tools to state-of-the-art powder coating technologies — we deliver performance, durability, and innovation that elevate every industrial project.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+ <!-- SERVICES CARDS -->
+<section class="relative max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24 reveal">
+
+  <!-- Soft Background Glow -->
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[320px] h-[320px] sm:w-[450px] sm:h-[450px] md:w-[600px] md:h-[600px] bg-[#05e3e8]/5 blur-[160px] rounded-full pointer-events-none"></div>
+
+  <div class="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
+
+    <!-- Service 1 -->
+    <div class="group relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 sm:p-8 transition-all duration-500 hover:border-[#05e3e8]/40 hover:-translate-y-2">
+
+      <div class="overflow-hidden rounded-2xl mb-6">
+        <img src="service1.avif"
+             alt=""
+             class="w-full h-36 sm:h-40 object-cover rounded-2xl transition-transform duration-700 group-hover:scale-110">
+      </div>
+
+      <h3 class="text-xl sm:text-2xl font-semibold mb-4"
+          data-i18n="service1_title">
+        Industrial Tools Supply
+      </h3>
+
+      <p class="text-gray-300 leading-relaxed text-sm sm:text-base"
+         data-i18n="service1_text">
+        High-quality industrial tools carefully selected to ensure reliability, precision, and long-term efficiency in demanding environments.
+      </p>
+    </div>
+
+
+    <!-- Service 2 -->
+    <div class="group relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 sm:p-8 transition-all duration-500 hover:border-[#05e3e8]/40 hover:-translate-y-2">
+
+      <div class="overflow-hidden rounded-2xl mb-6">
+        <img src="service2.jpg"
+             alt=""
+             class="w-full h-36 sm:h-40 object-cover rounded-2xl transition-transform duration-700 group-hover:scale-110">
+      </div>
+
+      <h3 class="text-xl sm:text-2xl font-semibold mb-4"
+          data-i18n="service2_title">
+        Advanced Powder Coating
+      </h3>
+
+      <p class="text-gray-300 leading-relaxed text-sm sm:text-base"
+         data-i18n="service2_text">
+        Durable and vibrant coating solutions engineered to enhance aesthetics while providing superior surface protection.
+      </p>
+    </div>
+
+
+    <!-- Service 3 -->
+    <div class="group relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 sm:p-8 transition-all duration-500 hover:border-[#05e3e8]/40 hover:-translate-y-2">
+
+      <div class="overflow-hidden rounded-2xl mb-6">
+        <img src="service3.jpg"
+             alt=""
+             class="w-full h-36 sm:h-40 object-cover rounded-2xl transition-transform duration-700 group-hover:scale-110">
+      </div>
+
+      <h3 class="text-xl sm:text-2xl font-semibold mb-4"
+          data-i18n="service3_title">
+        Technical Consultation & Project Support
+      </h3>
+
+      <p class="text-gray-300 leading-relaxed text-sm sm:text-base"
+         data-i18n="service3_text">
+        Expert guidance to help you select the right tools and coating systems for optimal performance and durability.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- WHY CHOOSE US -->
+<section class="relative py-16 sm:py-24 px-4 sm:px-6 max-w-6xl mx-auto reveal">
+
+  <!-- Soft Background Glow -->
+  <div class="absolute -top-20 left-1/2 -translate-x-1/2 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] bg-[#05e3e8]/10 blur-[140px] rounded-full pointer-events-none"></div>
+
+  <!-- Title -->
+  <div class="relative text-center mb-12 sm:mb-16">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 text-[#05e3e8]"
+        data-i18n="why_choose_us_title">
+      Why Choose Asia Kara?
+    </h2>
+
+    <p class="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
+       data-i18n="why_choose_us_text">
+      With years of experience, precision engineering, and a deep commitment to quality, we deliver solutions that elevate every project beyond expectations.
+    </p>
+  </div>
+</section>
+
+  <!-- Cards -->
+<div class="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10 mt-0">
+
+  <!-- Card 1 -->
+  <div class="group relative m-12 bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 sm:p-8 transition-all duration-500 hover:border-[#05e3e8]/40 hover:-translate-y-2">
+
+    <div class="mb-6 flex justify-center">
+      <div class="w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center rounded-2xl bg-[#05e3e8]/10 text-[#05e3e8] text-2xl sm:text-3xl transition-all duration-500 group-hover:scale-110 group-hover:bg-[#05e3e8]/20">
+        <i class="fa-solid fa-cogs"></i>
+      </div>
+    </div>
+
+    <h4 class="text-lg sm:text-xl font-semibold mb-3 text-center"
+        data-i18n="why_us_quality_title">
+      Premium Quality
+    </h4>
+
+    <p class="text-gray-300 leading-relaxed text-sm sm:text-base text-center"
+       data-i18n="why_us_quality_text">
+      We deliver industrial tools and coatings engineered for durability, precision, and long-term performance.
+    </p>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="group relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 sm:p-8 transition-all duration-500 hover:border-[#05e3e8]/40 hover:-translate-y-2 m-12">
+
+    <div class="mb-6 flex justify-center">
+      <div class="w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center rounded-2xl bg-[#05e3e8]/10 text-[#05e3e8] text-2xl sm:text-3xl transition-all duration-500 group-hover:scale-110 group-hover:bg-[#05e3e8]/20">
+        <i class="fa-solid fa-handshake"></i>
+      </div>
+    </div>
+
+    <h4 class="text-lg sm:text-xl font-semibold mb-3 text-center"
+        data-i18n="why_us_support_title">
+      Professional Support
+    </h4>
+
+    <p class="text-gray-300 leading-relaxed text-sm sm:text-base text-center"
+       data-i18n="why_us_support_text">
+      Our experienced team works closely with you to ensure seamless project execution.
+    </p>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="group relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 sm:p-8 transition-all duration-500 hover:border-[#05e3e8]/40 hover:-translate-y-2 m-12">
+
+    <div class="mb-6 flex justify-center">
+      <div class="w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center rounded-2xl bg-[#05e3e8]/10 text-[#05e3e8] text-2xl sm:text-3xl transition-all duration-500 group-hover:scale-110 group-hover:bg-[#05e3e8]/20">
+        <i class="fa-solid fa-award"></i>
+      </div>
+    </div>
+
+    <h4 class="text-lg sm:text-xl font-semibold mb-3 text-center"
+        data-i18n="why_us_trust_title">
+      Trusted & Reliable
+    </h4>
+
+    <p class="text-gray-300 leading-relaxed text-sm sm:text-base text-center"
+       data-i18n="why_us_trust_text">
+      Clients rely on us for consistent quality, timely delivery, and technical excellence.
+    </p>
+  </div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT CTA -->
+<section class="relative py-16 sm:py-20 md:py-24 px-4 sm:px-6 max-w-5xl mx-auto text-center reveal">
+
+  <!-- Soft Background Glow -->
+  <div class="absolute inset-0 flex justify-center">
+    <div class="w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] bg-[#05e3e8]/10 blur-[140px] rounded-full"></div>
+  </div>
+
+  <!-- Glass Container -->
+  <div class="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 sm:p-10 md:p-12">
+
+    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-[#05e3e8]"
+        data-i18n="contact_cta_title">
+      Have a project in mind? Contact us today!
+    </h2>
+
+    <p class="text-base sm:text-lg text-gray-300 leading-relaxed max-w-2xl mx-auto mb-8 sm:mb-10"
+       data-i18n="contact_cta_text">
+      Share your requirements with us and our team will provide tailored industrial solutions designed for precision and long-term success.
+    </p>
+
+    <a href="contact.html"
+       class="inline-block px-8 sm:px-10 py-3 sm:py-4 rounded-2xl font-semibold bg-[#05e3e8] text-black transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(5,227,232,0.4)]"
+       data-i18n="contact_cta_button">
+      Contact Us
+    </a>
+
+  </div>
+</section>
+
+<div id="footer-container"></div>
+
+
+
+<!-- SCRIPTS -->
+<!-- FontAwesome (required for icons) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+<!-- Flowbite (required for dropdown + mobile navbar behavior) -->
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+<script src="kara.js" defer></script>
+</body>
+</html>

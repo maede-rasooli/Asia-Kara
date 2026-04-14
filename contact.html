@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en" class="dark" class="font-sans">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Asia Kara</title>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="" crossorigin="anonymous" />
+  <style>
+    :root{
+      --brand-light: #04c9cf;
+      --brand-dark:  #05e3e8;
+      --brand: var(--brand-light);
+    }
+    .dark { --brand: var(--brand-dark); }
+    /* fade in on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s ease;
+}
+
+/* When visible */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+  </style>
+  <link rel="icon" type="image/png" href="Asia_Kara_Industrial_Tools_Logo_Final_1-removebg-preview.png"/>
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-neutral-100 dark:bg-neutral-900 text-neutral-900 dark:text-gray-200 antialiased selection:bg-[#05e3e8]/30">
+<div id="navbar-container"></div>
+
+<section id="contact" class="w-full py-16 bg-black/20 backdrop-blur-sm rounded-3xl px-6 pt-[120px]">
+
+  <!-- This will be hidden -->
+  <div id="contact-content" class="max-w-3xl mx-auto text-white reveal">
+
+    <h2 class="text-3xl font-bold mb-6 text-[#05e3e8]" data-i18n="contact_heading">
+      Contact Us
+    </h2>
+
+    <p class="mb-8 opacity-90" data-i18n="contact_intro">
+      Fill in your name and message below, and we'll get back to you as soon as possible.
+    </p>
+
+    <form id="contact-form" action="https://formspree.io/f/mpqjdzez" method="POST" class="space-y-6">
+ 
+      <!-- Name Input -->
+      <div>
+        <label for="name" class="block mb-2 font-medium" data-i18n="contact_name_label">Your Name</label>
+        <input 
+          type="text" 
+          name="name" 
+          id="name" 
+          required
+          placeholder="Enter your name"
+          data-i18n-placeholder="contact_name_placeholder"
+          class="w-full rounded-xl border border-white/20 bg-black/10 backdrop-blur-sm p-3 text-white placeholder-white/60 focus:border-[#05e3e8] focus:outline-none transition-colors duration-300"
+        >
+      </div>
+<!-- Email Input -->
+<div>
+  <label for="email" class="block mb-2 font-medium" data-i18n="your_email">
+    Your Email
+  </label>
+  <input 
+    type="email" 
+    name="email" 
+    id="email" 
+    required
+    placeholder="Enter your email"
+    class="w-full rounded-xl border border-white/20 bg-black/10 backdrop-blur-sm p-3 text-white placeholder-white/60 focus:border-[#05e3e8] focus:outline-none transition-colors duration-300"
+  >
+</div>
+
+      <!-- Message Input -->
+      <div>
+        <label for="message" class="block mb-2 font-medium" data-i18n="contact_message_label">Your Message</label>
+        <textarea 
+          name="message" 
+          id="message" 
+          rows="5" 
+          required
+          placeholder="Type your message..."
+          data-i18n-placeholder="contact_message_placeholder"
+          class="w-full rounded-xl border border-white/20 bg-black/10 backdrop-blur-sm p-3 text-white placeholder-white/60 focus:border-[#05e3e8] focus:outline-none transition-colors duration-300"
+        ></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="bg-[#05e3e8] hover:bg-[#3ef0f3] text-black font-bold px-6 py-3 rounded-xl transition-all duration-300" data-i18n="contact_submit">
+        Send Message
+      </button>
+    </form>
+  </div>
+    <!-- Success Message (outside content container) -->
+  <div id="success-message" class="hidden text-center text-white mt-10">
+    <h3 class="text-2xl font-bold text-[#05e3e8]"  data-i18n="thank_you">
+      Thank You
+    </h3>
+    <p class="mt-4 opacity-90" data-i18n="thank_you_message">
+      Your message has been sent successfully.
+    </p>
+  </div>
+
+</section>
+
+
+<!-- MINI MAP -->
+<div class="w-full bg-neutral-900 flex justify-center py-8 px-4 reveal">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d855.2444368586162!2d62.1938000557621!3d34.35814053961168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDIxJzI5LjkiTiA2MsKwMTEnMzkuMiJF!5e0!3m2!1sen!2s!4v1760172602873!5m2!1sen!2s"
+    width="1000" 
+    height="200" 
+    class="rounded-lg w-full max-w-5xl border-0"
+    allowfullscreen 
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+<div id="footer-container"></div>
+
+<!-- SCRIPTS -->
+<!-- FontAwesome (required for icons) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+<!-- Flowbite (required for dropdown + mobile navbar behavior) -->
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+<script src="kara.js" defer></script>
+</body>
+</html>

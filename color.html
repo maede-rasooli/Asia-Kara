@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en" class="dark" class="font-sans">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Asia Kara</title>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="" crossorigin="anonymous" />
+  <style>
+    :root{
+      --brand-light: #04c9cf;
+      --brand-dark:  #05e3e8;
+      --brand: var(--brand-light);
+    }
+    .dark { --brand: var(--brand-dark); }
+    /* fade in on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s ease;
+}
+
+/* When visible */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+  </style>
+  <link rel="icon" type="image/png" href="Asia_Kara_Industrial_Tools_Logo_Final_1-removebg-preview.png"/>
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-neutral-100 dark:bg-neutral-900 text-neutral-900 dark:text-gray-200 antialiased selection:bg-[#05e3e8]/30">
+
+<div id="navbar-container"></div>
+<!-- ================= PREMIUM HERO ================= -->
+<section class="relative w-full min-h-screen bg-black text-white overflow-hidden reveal">
+
+  <!-- Background -->
+  <img src="hero color.webp"
+       alt="Powder Coating"
+       class="absolute inset-0 w-full h-full object-cover opacity-40">
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-br from-black via-black/90 to-[#051f24]"></div>
+
+  <!-- Glow Accent -->
+  <div class="absolute -top-32 -left-32 w-[400px] h-[400px] bg-[#05e3e8]/20 blur-[120px] rounded-full"></div>
+  <div class="absolute bottom-0 right-0 w-[300px] h-[300px] bg-[#05e3e8]/10 blur-[100px] rounded-full"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-7xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
+
+    <!-- LEFT CONTENT -->
+    <div>
+
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-[#05e3e8]"
+          data-i18n="powder_hero_title">
+         Induatrial ELectro Estatic Coatings
+      </h1>
+
+      <p class="mt-6 text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed max-w-xl"
+         data-i18n="powder_hero_intro">
+        High-performance thermoset and thermoplastic powder coatings designed for durability,
+        corrosion resistance, and premium surface finishes across industrial applications.
+      </p>
+
+      <!-- Types -->
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm sm:text-base">
+
+        <div class="border-l-2 border-[#05e3e8] pl-4">
+          <p class="text-[#05e3e8] font-semibold" data-i18n="powder_type_epoxy">Epoxy Coatings</p>
+          <p class="text-gray-400 mt-1" data-i18n="powder_type_epoxy_desc">
+            Superior corrosion protection
+          </p>
+        </div>
+
+        <div class="border-l-2 border-[#05e3e8] pl-4">
+          <p class="text-[#05e3e8] font-semibold" data-i18n="powder_type_polyester">Polyester Coatings</p>
+          <p class="text-gray-400 mt-1" data-i18n="powder_type_polyester_desc">
+            UV & weather resistance
+          </p>
+        </div>
+
+        <div class="border-l-2 border-[#05e3e8] pl-4">
+          <p class="text-[#05e3e8] font-semibold" data-i18n="powder_type_hybrid">Hybrid Systems</p>
+          <p class="text-gray-400 mt-1" data-i18n="powder_type_hybrid_desc">
+            Balanced indoor performance
+          </p>
+        </div>
+
+        <div class="border-l-2 border-[#05e3e8] pl-4">
+          <p class="text-[#05e3e8] font-semibold" data-i18n="powder_type_texture">Textured Finishes</p>
+          <p class="text-gray-400 mt-1" data-i18n="powder_type_texture_desc">
+            Modern aesthetic coatings
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="hidden md:block">
+      <div class="relative rounded-3xl overflow-hidden border border-[#05e3e8]/20">
+        <img src="colorpage6.webp"
+             alt="Powder Coating Finish"
+             class="w-full h-[500px] object-cover">
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ================= FEATURE GRID ================= -->
+<section class="max-w-7xl mx-auto py-24 px-6 reveal">
+
+  <div class="grid md:grid-cols-3 gap-8">
+
+    <div class="group overflow-hidden rounded-3xl">
+      <img src="colorpage1.webp"
+           class="w-full h-[420px] object-cover transition duration-700 group-hover:scale-110 group-hover:rotate-1">
+    </div>
+
+    <div class="group overflow-hidden rounded-3xl md:mt-16">
+      <img src="colorpage2.webp"
+           class="w-full h-[420px] object-cover transition duration-700 group-hover:scale-110 group-hover:-rotate-1">
+    </div>
+
+    <div class="group overflow-hidden rounded-3xl">
+      <img src="colorpage3.webp"
+           class="w-full h-[420px] object-cover transition duration-700 group-hover:scale-110 group-hover:rotate-1">
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ================= LARGE SPLIT SHOWCASE ================= -->
+<section class="py-24 bg-neutral-950 reveal">
+
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 px-6">
+
+    <div class="relative overflow-hidden rounded-3xl group">
+      <img src="indexcolor5.jfif"
+           class="w-full h-[520px] object-cover transition duration-700 group-hover:scale-105">
+      <div class="absolute inset-0 border border-[#05e3e8]/20 rounded-3xl pointer-events-none"></div>
+    </div>
+
+    <div class="relative overflow-hidden rounded-3xl group">
+      <img src="colorpage7.webp"
+           class="w-full h-[520px] object-cover transition duration-700 group-hover:scale-105">
+      <div class="absolute inset-0 border border-[#05e3e8]/20 rounded-3xl pointer-events-none"></div>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ================= MODERN MASONRY STYLE ================= -->
+<section class="max-w-7xl mx-auto py-24 px-6 reveal">
+
+  <div class="columns-1 md:columns-3 gap-6 space-y-6">
+
+    <img src="colorpage8.webp" class="rounded-3xl w-full hover:scale-105 transition duration-500">
+    <img src="colorpage9.jpg" class="rounded-3xl w-full hover:scale-105 transition duration-500">
+    <img src="colorpage11.avif" class="rounded-3xl w-full hover:scale-105 transition duration-500">
+    <img src="colorpage12.webp" class="rounded-3xl w-full hover:scale-105 transition duration-500">
+    <img src="colorpage14.jpg" class="rounded-3xl w-full hover:scale-105 transition duration-500">
+    <img src="colorpage15.jpg" class="rounded-3xl w-full hover:scale-105 transition duration-500">
+
+  </div>
+
+</section>
+
+<div id="footer-container"></div>
+
+
+
+<!-- SCRIPTS -->
+<!-- FontAwesome (required for icons) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+<!-- Flowbite (required for dropdown + mobile navbar behavior) -->
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+<script src="kara.js" defer></script>
+</body>
+</html>
